@@ -118,12 +118,137 @@ body{
     
     margin-right: 15rem;
 }
+/* card section */
+.games-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.fun{
+    color: #8758F1;
+  
+}
+.games-paragraph{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.online-games{
+    margin: auto 15rem;
+}
+.card{
+    width: 20rem;
+    /* height: 25rem; */
+    position: relative;
+    /* border: 2px solid black; */
+}
+.card:hover{
+    .play-btn{
+        visibility: visible;
+    }
+    .watch-games{
+        visibility: visible;
+    }
+    .images{
+        /* visibility: visible; */
+        border-radius: 15px;
+        box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0), 0 0px 200px 0 rgb(0, 0, 10);
+    }
+
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-btn
+{
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 40%;
+    border: none;
+}
+.watch-games{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 40%;
+    border: none;
+    color: #FF42A5 ;
+}
+.play-btn i{
+    
+    /* background-color: wheat; */
+    color: black;
+    
+    /* padding: 20px; */
+    
+}
+.card img{
+    width: 20rem;
+    position: relative;
+    
+}
+/* play games title */
+.play-instant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: auto 15rem;
+}
+.play-instant-info{
+    text-align: right;
+    margin-right: 15rem;
+}
+.play-games-title{
+    font-size: 3rem;
+    font-weight: 700;
+    /* text-align: right; */
+}
+.feature-img{
+    height: 90%;
+    margin-left: 70px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    
+    color: #FFF;
+    width: 342px;
+    padding: 4px;
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
     .navbar-container,
-    .nav-menu ul
+    .nav-menu ul,
+    .card-container,
+    .play-instant
     {
         flex-direction: column;
     }
@@ -169,5 +294,41 @@ body{
     .banner-des{
        padding: 10px;
        text-align: justify;
+    }
+    .online-games,
+    .play-instant{
+        margin: 0px;
+    }
+    .play-instant-info{
+        margin: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    
+    .feature-img img{
+        width: 80%;
+        height: 60%;
+        margin-left: 50px;
+    }
+    .ten-years-badge img{
+        width: 30%;
+        padding: 30px;
+        margin-left: 100px;
+    }
+    /* .feature-img{
+        height: 90%;
+        margin-left: 70px;
+    } */
+    .ten-years-badge{
+        border-radius: 8px;
+        
+        color: #FFF;
+        width: 342px;
+        padding: 4px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+        right: 180px;
     }
 }
