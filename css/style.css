@@ -229,11 +229,95 @@ body{
     right: 100px;
 }
 
+/* icon card style */
+.icon-card-container{
+    background-color: rgba(255, 66, 165, 0.03);
+    /* text-align: center; */
+}
+.icon-card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    gap: 20px;
+    margin: auto 15rem;
+    grid-template-rows: repeat(2,1fr);
+    padding: 10rem 0px;
+    grid-area: auto;
+    /* text-align: center; */
+    
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 15rem;
+    gap: 3px;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    background-color: #FFF;
+    padding: 1rem 1.5rem;
+}
+.icon h4{
+    /* margin-left: .5rem; */
+    font-weight: 300;
 
+}
+.icon:hover{
+    border: 1px solid #FF42A5 ;
+    color: #FF42A5;
+}
+/* footer */
+footer{
+    background-color:#0B0223 ;
+    color: #FFFFFF;
+}
+.foot-container{
+    text-align: center;
+    padding: 7.5rem;
+}
+.foot-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-option {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin: 0px 10px; */
+}
+.footer-carier{
+    /* width: 535px;
+    height: 235px; */
+    margin: auto 535px;
+    text-align: center;
+}
+.foot-option h5{
+    
+    /* margin: 30px 10px; */
+}
+.foot-option{
+    
+    padding: 20px 0px;
+}
+a>i{
+    width: 40px;
+    height: 40px;
+   color: #FFFFFF;
+}
 
-
-
-
+.foot-terms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -252,6 +336,7 @@ body{
     {
         flex-direction: column;
     }
+    
     .nav-menu ul li{
         margin: 1.2rem 0;
     }
@@ -261,6 +346,7 @@ body{
     }
     .nested-menu{
         padding: 0px;
+        margin-bottom: 30px;
     }
     .nested-menu li{
         padding: 10px 20px;
@@ -274,7 +360,11 @@ body{
         padding: 30px; */
         flex-direction: column-reverse;
         background-image: none !important;
+        /* margin-top: 40px; */
         
+    }
+    .banner-goat{
+        color: #8758F1;
     }
     .banner-img img{
         width: 100%;
@@ -330,4 +420,69 @@ body{
         bottom: 50px;
         right: 200px;
     }
+    .icon-card-container{
+        background-color: rgba(255, 66, 165, 0.03);
+        /* text-align: center; */
+    }
+    .icon-card{
+
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+        gap: 10px;
+        padding: 7.5rem 0px;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        width: 30px;
+        width: 8rem;
+        /* border: 2px solid black; */
+        border-radius: 50px;
+        background-color: #FFF;
+        /* padding: 1rem 1.55rem; */
+    }
+    .icon img{
+        width: 50px;
+    }
+    .icon:hover{
+        border: 1px solid #FF42A5 ;
+        color: #FF42A5;
+    }
+    .footer-carier{
+        /* width: 535px;
+        height: 235px; */
+        margin: 0px ;
+        text-align: center;
+    }
+    .foot-option{
+        grid-template-columns: repeat(3,1fr);
+        padding: 0px;
+        margin: 0px;
+    }
+    .foot-option h5 {
+        
+        padding: 10px;
+        margin: 0px;
+    }
+    .foot-option a {
+        
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    .foot-terms {
+       
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .foot-container{
+        text-align: center;
+        padding: 3.5rem;
+    }
+    
 }
