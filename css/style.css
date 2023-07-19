@@ -1,0 +1,96 @@
+/* shared style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700;800&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+body{
+    margin: 0px;
+}
+.text-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+.text-title-color{
+    color: #FF42A5;
+}
+
+/* nav style */
+.header-section{
+    
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto 15rem;
+    
+
+}
+.gamer-title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.gamer-title img{
+    width: 5.3rem;
+    height: 2.5rem;
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 10px;
+    padding: 0px;
+}
+.nav-menu ul li{
+    
+    margin-right: 2rem;
+    list-style: none;
+}
+.nested-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 1rem 1.8rem;
+    padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+    .navbar-container,
+    .nav-menu ul{
+        flex-direction: column;
+    }
+    .nav-menu ul li{
+        margin: 1.2rem 0;
+    }
+    .navbar-container{
+        margin: 0px;
+
+    }
+    .nested-menu{
+        padding: 0px;
+    }
+    .nested-menu li{
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+}
